@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>index</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <style>
+      ul.pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+      ul.pagination li {
+        display: inline;
+      }
+      ul.pagination li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      ul.pagination li a.active {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+      }
+      ul.pagination li a:hover:not(.active) {
+        background-color: #ddd;
+      }
+    </style>
+    <style>
+      details {
+        margin-bottom: 1rem;
+      }
+    </style>
+    <script>
+      function emptyFunction() {
+        alert("还没写第二页QAQ");
+      }
+    </script>
+    <style>
+      body {
+        background-image: url("bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; /* 或者 'cover'，根据需要调整 */
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #f1f1f1a2; text-align: center; padding: 40px">
+      <img src="me.jpg" alt="me" width="160px" height="160px" />
+    </div>
+    <div
+      style="
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+      "
+    >
+      <h1>欢迎来到旭旭子的个人网站</h1>
+      <h4>这里将会为您展示有关于我的内容</h4>
+      <details>
+        <summary>我的属性</summary>
+        <p>1</p>
+      </details>
+      <p>我的网站</p>
+      <p>我的网站</p>
+      <p>我的网站</p>
+    </div>
+    <div
+      style="
+        max-width: 700px;
+        margin: 5px auto;
+        padding: 5px;
+        line-height: 1.7;
+        text-align: center;
+      "
+    >
+      <ul class="pagination">
+        <li><a href="">«</a></li>
+        <li><a class="active" href="">1</a></li>
+        <li><a onclick="emptyFunction()" href="">2</a></li>
+        <li><a href="">»</a></li>
+      </ul>
+    </div>
+    <div style="background-color: #f1f1f1a2; text-align: center; padding: 40px">
+      <a href="https://xuxuziqaq.github.io/Re1/">我的网站<br /></a>
+      <a href="https://arcaea.lowiro.com/zh">源神官网</a>
+    </div>
+  </body>
+</html>
