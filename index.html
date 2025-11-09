@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>index</title>
+    <title>旭旭子的网站</title>
+    <link rel="stylesheet" href="Arcaea.jpg" />
+    <script src="Arcaea.jpg"></script>
     <style>
       body {
         margin: 0;
@@ -53,6 +55,17 @@
         background-attachment: fixed;
       }
     </style>
+    <style>
+      img.thumbnail {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+      }
+
+      img.thumbnail:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+    </style>
   </head>
   <body>
     <div style="background-color: #f1f1f1a2; text-align: center; padding: 40px">
@@ -64,17 +77,109 @@
         margin: 30px auto;
         padding: 15px;
         line-height: 1.7;
+        text-align: center;
       "
     >
       <h1>欢迎来到旭旭子的个人网站</h1>
-      <h4>这里将会为您展示有关于我的内容</h4>
+      <h4>│你好！这里是旭旭子/Silver/Tarnishing，很高兴认识你~│</h4>
+    </div>
+    <div
+      style="
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+        text-align: center;
+      "
+    >
+      <h3>我的属性</h3>
+      <p>
+        17岁苦逼高中生，MTF，坐标湖南常德，mbit INFP，好感furry<br />自认为很好说话<br />你喜欢我＝我喜欢你
+      </p>
+    </div>
+    <div
+      style="
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
+      "
+    >
       <details>
-        <summary>我的属性</summary>
-        <p>1</p>
+        <summary>音游相关</summary>
+        <p>
+          现在就主玩Arcaea和maimai了，本地可以约我出勤！（前提是有时间可以出）
+        </p>
+        <details>
+          <summary style="text-indent: 10px"><b>Arcaea</b></summary>
+          <blockquote>
+            <p>
+              Ryd191xuxuziQAQ<br />ID:907954422<br />Ryd战队成员之一<br />目前PTT:13.15
+            </p>
+            <ul class="clearing-thumbs" data-clearing>
+              <li>
+                <a href="Arcaea.jpg" target="_blank" class="th">
+                  <img
+                    class="thumbnail"
+                    data-caption="arc主页"
+                    src="Arcaea.jpg"
+                    alt="arc"
+                    width="288"
+                    height="180"
+                  />
+                </a>
+              </li>
+            </ul>
+          </blockquote>
+        </details>
+        <details>
+          <summary style="text-indent: 10px"><b>MaiMaiDX</b></summary>
+          <blockquote>
+            <p>xuxuziω<br />好友号码:971828045390386<br />目前Rating:14969</p>
+            <ul class="clearing-thumbs" data-clearing>
+              <li>
+                <a href="mai_rating.jpg" target="_blank" class="th">
+                  <img
+                    class="thumbnail"
+                    data-caption="maiRating"
+                    src="mai_rating.jpg"
+                    alt="mai"
+                    width="352"
+                    height="384"
+                  />
+                </a>
+              </li>
+            </ul>
+          </blockquote>
+        </details>
+        <details>
+          <summary style="text-indent: 10px"><b>Phigros</b></summary>
+          <blockquote>
+            <p>旭旭子<br />目前RKS:16.30</p>
+            <ul class="clearing-thumbs" data-clearing>
+              <li>
+                <a href="pgr.jpg" target="_blank" class="th">
+                  <img
+                    class="thumbnail"
+                    data-caption="maiRating"
+                    src="pgr.jpg"
+                    alt="pgr"
+                    width="300"
+                    height="469"
+                  />
+                </a>
+              </li>
+            </ul>
+          </blockquote>
+        </details>
       </details>
-      <p>我的网站</p>
-      <p>我的网站</p>
-      <p>我的网站</p>
+      <details>
+        <summary>1</summary>
+        <p></p>
+      </details>
+      <details>
+        <summary></summary>
+      </details>
     </div>
     <div
       style="
@@ -96,5 +201,10 @@
       <a href="https://xuxuziqaq.github.io/Re1/">我的网站<br /></a>
       <a href="https://arcaea.lowiro.com/zh">源神官网</a>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(document).foundation();
+      });
+    </script>
   </body>
 </html>
