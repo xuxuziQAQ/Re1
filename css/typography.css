@@ -1,0 +1,58 @@
+/* 标题排版 */
+/* 主要标题样式 - 带半透明背景、渐变装饰条和上方间距 */
+h1 {
+  text-align: center;
+  margin: 65px auto 40px;
+  /* 上方间距60px，下方间距40px */
+  color: #031525;
+  position: relative;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 821px;
+  width: 90%;
+  /* 默认90%宽度 */
+  max-width: 821px;
+  /* 最大宽度不超过背景图片 */
+  box-sizing: border-box;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 5px;
+  background: linear-gradient(to right, #84baf3, #ffffff, #ff9cb4);
+  border-radius: 2px;
+}
+
+/* 小屏幕适配 */
+@media (max-width: 850px) {
+  h1 {
+    width: 95%;
+    margin: 40px auto 30px;
+    padding: 20px;
+  }
+}
+
+div[style*="max-width: 700px"] {
+  max-width: 821px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+/* 保持h4居中显示 */
+div[style*="max-width: 700px"] h4 {
+  text-align: center;
+}
+
+/* 保持h3居中显示 */
+div[style*="max-width: 700px"] h3 {
+  text-align: center;
+}

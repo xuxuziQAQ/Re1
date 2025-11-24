@@ -1,0 +1,42 @@
+/* 背景图片 */
+body {
+  background-image: url("../assets/images/backgrounds/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* 或者 'cover'，根据需要调整 */
+  background-attachment: fixed;
+
+  background:
+    /* 主背景图片 */ url("../assets/images/backgrounds/bg.jpg")
+      center/contain no-repeat fixed,
+    /* 羽化边缘 */
+      radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        transparent 65%,
+        #d1ecfb 85%,
+        #b2dff9 100%
+      )
+      fixed,
+    /* 底色 */ #93d2f7 fixed;
+}
+
+/* 毛玻璃效果 */
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  pointer-events: none;
+  /* 允许点击穿透 */
+}
